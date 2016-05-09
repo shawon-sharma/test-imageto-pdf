@@ -36,8 +36,6 @@ public class MainActivity extends Activity {
     private Button b, choose, camera, showPdf,send;
     ImageView imageView;
     Bitmap bitmap;
-    private String imgPath;
-    File destination;
     EditText eemail;
     String email;
 
@@ -46,7 +44,7 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        camera = (Button) findViewById(R.id.camera);
+       findView();
         camera.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -67,7 +65,7 @@ public class MainActivity extends Activity {
             }
         });
 
-        b = (Button) findViewById(R.id.button1);
+
         b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -75,8 +73,7 @@ public class MainActivity extends Activity {
                 createPDF();
             }
         });
-        eemail = (EditText) findViewById(R.id.emailTo);
-        showPdf =(Button) findViewById(R.id.show);
+
         showPdf.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -88,11 +85,11 @@ public class MainActivity extends Activity {
 
             }
         });
-        send=(Button)findViewById(R.id.send);
+
         send.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                eemail= (EditText) findViewById(R.id.emailTo);
+
                 email=eemail.getText().toString();
 
                 String filename="/droidText/sample.pdf";
@@ -113,16 +110,25 @@ public class MainActivity extends Activity {
             }
         });
     }
-public void  findView(View v)
-{
-    choose = (Button) findViewById(R.id.choose);
-}
 
+public void  findView()
+{
+
+    //
+
+    choose = (Button) findViewById(R.id.choose);
+    eemail = (EditText) findViewById(R.id.emailTo);
+    showPdf =(Button) findViewById(R.id.show);
+    camera = (Button) findViewById(R.id.camera);
+    send=(Button)findViewById(R.id.send);
+    imageView = (ImageView) findViewById(R.id.img);
+    b = (Button) findViewById(R.id.button1);
+}
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        imageView = (ImageView) findViewById(R.id.img);
+
         if (requestCode == 1 && resultCode == RESULT_OK && null != data) {
             Uri selectedImage = data.getData();
             String[] filePathColumn = {MediaStore.Images.Media.DATA};
@@ -152,8 +158,6 @@ public void  findView(View v)
             Bitmap im = BitmapFactory.decodeFile(imagePath);
 
             imageView.setImageBitmap(im);
-
-
 
         }
     }
