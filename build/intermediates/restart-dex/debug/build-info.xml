@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    abi="x86,armeabi-v7a,armeabi"
+    api-level="21"
+    density="xhdpi"
+    format="7"
+    timestamp="4022136927460" >
+
+    <task
+        name="javac"
+        duration="108" />
+    <task
+        name="instant-run-dex"
+        duration="0" />
+    <task
+        name="instant-run-transform"
+        duration="19" />
+    <task
+        name="verifier"
+        duration="1" />
+
+    <artifact
+        location="/home/sharma/Desktop/PDF-TO-Image-master/build/outputs/apk/PDF-TO-Image-master-debug.apk"
+        type="MAIN" />
+
+    <build timestamp="4022136927460" >
+        <artifact
+            location="/home/sharma/Desktop/PDF-TO-Image-master/build/outputs/apk/PDF-TO-Image-master-debug.apk"
+            type="MAIN" />
+    </build>
+
+</instant-run>

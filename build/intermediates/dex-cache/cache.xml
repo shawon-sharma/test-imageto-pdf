@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/home/sharma/Desktop/PDF-TO-Image-master/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="21.0.0"
+        sha1="49cbd0ef4c295ebd9b1655a44cb0d1a77016a97c">
+        <dex dex="/home/sharma/Desktop/PDF-TO-Image-master/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_f3ca76ed48cc359cd0f922037022eb41f78a65e1/classes.dex" />
+    </item>
+    <item
+        jar="/home/sharma/Desktop/PDF-TO-Image-master/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        revision="21.0.0"
+        sha1="0877c30329458794e025492b4fee8baa872968a7">
+        <dex dex="/home/sharma/Desktop/PDF-TO-Image-master/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_ffe6eb3b53cd0cc76ebc25e1d2c66d178f8ed950/classes.dex" />
+    </item>
+    <item
+        jar="/home/sharma/Desktop/PDF-TO-Image-master/libs/android-support-v4.jar"
+        jumboMode="true"
+        revision="21.0.0"
+        sha1="307c1cc532eabbf1d135b43e5c983c9da700449d">
+        <dex dex="/home/sharma/Desktop/PDF-TO-Image-master/build/intermediates/transforms/dex/debug/folders/1000/2/android-support-v4_e2b5a51f7aedbedb9c11153bf4ae41dc58972adb/classes.dex" />
+    </item>
+    <item
+        jar="/home/sharma/Desktop/PDF-TO-Image-master/libs/droidText.0.2.jar"
+        jumboMode="true"
+        revision="21.0.0"
+        sha1="8d3b2e377acd34e33c3e758aa512e1745c2c9401">
+        <dex dex="/home/sharma/Desktop/PDF-TO-Image-master/build/intermediates/transforms/dex/debug/folders/1000/2/droidText.0.2_e4220cef3ad290e42fd3a333c8c1716e95239a50/classes.dex" />
+    </item>
+
+</items>
